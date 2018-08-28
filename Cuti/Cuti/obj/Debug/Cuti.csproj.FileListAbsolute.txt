@@ -1,0 +1,13 @@
+A:\Bootcamp MII\Project\Cuti\Cuti\bin\Debug\Cuti.exe.config
+A:\Bootcamp MII\Project\Cuti\Cuti\bin\Debug\Cuti.exe
+A:\Bootcamp MII\Project\Cuti\Cuti\bin\Debug\Cuti.pdb
+A:\Bootcamp MII\Project\Cuti\Cuti\bin\Debug\EntityFramework.dll
+A:\Bootcamp MII\Project\Cuti\Cuti\bin\Debug\EntityFramework.SqlServer.dll
+A:\Bootcamp MII\Project\Cuti\Cuti\bin\Debug\EntityFramework.xml
+A:\Bootcamp MII\Project\Cuti\Cuti\bin\Debug\EntityFramework.SqlServer.xml
+A:\Bootcamp MII\Project\Cuti\Cuti\obj\Debug\Cuti.csprojResolveAssemblyReference.cache
+A:\Bootcamp MII\Project\Cuti\Cuti\obj\Debug\Cuti.exe
+A:\Bootcamp MII\Project\Cuti\Cuti\obj\Debug\Cuti.pdb
+A:\Bootcamp MII\Project\Cuti\Cuti\obj\Debug\Cuti.Migrations.InitialCreate.resources
+A:\Bootcamp MII\Project\Cuti\Cuti\obj\Debug\Cuti.csproj.GenerateResource.Cache
+A:\Bootcamp MII\Project\Cuti\Cuti\obj\Debug\Cuti.Migrations.InitialCreate1.resources
