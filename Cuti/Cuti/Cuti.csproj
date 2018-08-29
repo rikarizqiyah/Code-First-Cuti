@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CodeFirstStoreFunctions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=46c4868af4307d2c, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.CodeFirstStoreFunctions.1.1.2\lib\net45\CodeFirstStoreFunctions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -54,6 +58,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\LeaveRequestController.cs" />
+    <Compile Include="Controller\SpecialLeaveController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Migrations\201808281456200_InitialCreate.cs" />
     <Compile Include="Migrations\201808281456200_InitialCreate.Designer.cs">
@@ -62,6 +68,22 @@
     <Compile Include="Migrations\201808281532193_InitialCreate1.cs" />
     <Compile Include="Migrations\201808281532193_InitialCreate1.Designer.cs">
       <DependentUpon>201808281532193_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808290337067_SpecialLeave.cs" />
+    <Compile Include="Migrations\201808290337067_SpecialLeave.Designer.cs">
+      <DependentUpon>201808290337067_SpecialLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808290403116_SpecialLeave1.cs" />
+    <Compile Include="Migrations\201808290403116_SpecialLeave1.Designer.cs">
+      <DependentUpon>201808290403116_SpecialLeave1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808290621068_SpecialLeave2.cs" />
+    <Compile Include="Migrations\201808290621068_SpecialLeave2.Designer.cs">
+      <DependentUpon>201808290621068_SpecialLeave2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808290638199_ModelCuti.cs" />
+    <Compile Include="Migrations\201808290638199_ModelCuti.Designer.cs">
+      <DependentUpon>201808290638199_ModelCuti.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ModelCuti.cs" />
@@ -78,6 +100,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808281532193_InitialCreate1.resx">
       <DependentUpon>201808281532193_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808290337067_SpecialLeave.resx">
+      <DependentUpon>201808290337067_SpecialLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808290403116_SpecialLeave1.resx">
+      <DependentUpon>201808290403116_SpecialLeave1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808290621068_SpecialLeave2.resx">
+      <DependentUpon>201808290621068_SpecialLeave2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808290638199_ModelCuti.resx">
+      <DependentUpon>201808290638199_ModelCuti.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

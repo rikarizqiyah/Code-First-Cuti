@@ -33,7 +33,7 @@ namespace Cuti
                 Console.Clear();
                 Console.WriteLine("=======MENU=======");
                 Console.WriteLine("1. User");
-                Console.WriteLine("2. Exit");
+                Console.WriteLine("2. Special Leave");
                 Console.WriteLine("==================");
                 Console.Write("Pilih Action : ");
                 choice = Convert.ToInt32(System.Console.ReadLine());
@@ -43,12 +43,16 @@ namespace Cuti
                         UserController panggil_user = new UserController();
                         panggil_user.Menu();
                         break;
+                    case 2:
+                        SpecialLeaveController panggil_sl = new SpecialLeaveController();
+                        panggil_sl.Menu();
+                        break;
                     default:
                         System.Console.Write("Terima Kasih :)");
                         System.Console.Read();
                         break;
                 }
-            } while (choice != 2);
+            } while (choice != 3);
         }
     }
 }

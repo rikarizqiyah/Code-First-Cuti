@@ -69,7 +69,7 @@ namespace Cuti.Controller
             {
                 Console.WriteLine("-------------------------");
                 Console.WriteLine("Id                : " + users.Id);
-                //Console.WriteLine("Role Id           : " + users.Role_Id);
+                Console.WriteLine("Role Id           : " + users.RoleId);
                 Console.WriteLine("Name              : " + users.Name);
                 Console.WriteLine("Email             : " + users.Email);
                 Console.WriteLine("Company           : " + users.Company);
@@ -95,8 +95,8 @@ namespace Cuti.Controller
             // inputan by user
             Console.Write("Masukkan Id User           : ");
             id = Console.ReadLine();
-            //Console.Write("Masukkan Role Id           : ");
-            //role_id = Console.ReadLine();
+            Console.Write("Masukkan Role Id           : ");
+            role_id = Console.ReadLine();
             Console.Write("Masukkan Nama              : ");
             name = Console.ReadLine();
             Console.Write("Masukkan Email             : ");
@@ -126,6 +126,7 @@ namespace Cuti.Controller
             User users = new User()
             {
                 Id = id,
+                RoleId = role_id,
                 Name = name,
                 Email = email,
                 Company = company,
@@ -197,6 +198,7 @@ namespace Cuti.Controller
 
             Console.WriteLine("--------Data Sebelum di Update---------");
             Console.WriteLine("Id           : " + users.Id);
+            Console.WriteLine("Role         : " + users.RoleId);
             Console.WriteLine("Name         : " + users.Name);
             Console.WriteLine("Email        : " + users.Email);
             Console.WriteLine("Job Title    : " + users.Job_Title);
@@ -206,7 +208,7 @@ namespace Cuti.Controller
             Console.WriteLine("Password     : " + users.Password);
             Console.WriteLine("-------------------------\n");
 
-            Console.Write("Masukkan Nama Lengkap    : ");
+            Console.Write("Masukkan Nama            : ");
             name = Console.ReadLine();
             Console.Write("Masukkan Email           : ");
             email = Console.ReadLine();

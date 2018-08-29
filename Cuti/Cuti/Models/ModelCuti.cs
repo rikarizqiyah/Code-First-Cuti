@@ -43,8 +43,10 @@ namespace Cuti.Models
     {
         [Key]
         public string id { get; set; }
+        public string SpecialLeaveId { get; set; }
         public virtual SpecialLeave Special_Leave_Id { get; set; }
-        public User User_Id { get; set; }
+        public string UserId { get; set; }
+        public virtual User User_Id { get; set; }
         public DateTime Start_Date { get; set; }
         public DateTime End_Date { get; set; }
         public string Reason { get; set; }
@@ -52,6 +54,7 @@ namespace Cuti.Models
         public int Total_Date { get; set; }
         public int Holiday { get; set; }
         public DateTime Start_Date_Special { get; set; }
+        public DateTime End_Date_Special { get; set; }
         public string Attachment { get; set; }
         public ICollection<ApprovalHistory> ApprovalHistoryCollection { get; set; }
     }
@@ -61,7 +64,7 @@ namespace Cuti.Models
         [Key]
         public string Id { get; set; }
         public string Name { get; set; }
-        public string Qty_Leave { get; set; }
+        public int Qty_Leave { get; set; }
         public ICollection<LeaveRequest> LeaveRequestCollection { get; set; }
     }
 
@@ -69,6 +72,7 @@ namespace Cuti.Models
     {
         [Key]
         public string Id { get; set; }
+        public string LeaveRequestId { get; set; }
         public virtual LeaveRequest Leave_Request_Id { get; set; }
         public DateTime Date_Action { get; set; }
         public string Action { get; set; }
@@ -80,6 +84,7 @@ namespace Cuti.Models
     {
         [Key]
         public string Id { get; set; }
+        public string RoleId { get; set; }
         public virtual Role Role_Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
@@ -92,6 +97,7 @@ namespace Cuti.Models
         public DateTime Tanggal_Lahir { get; set; }
         public int This_Year_Balance { get; set; }
         public int Last_Year_Balance { get; set; }
+        public ICollection<LeaveRequest> LeaveRequests { get; set; }
     }
 
     [Table("role")]
@@ -101,6 +107,7 @@ namespace Cuti.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public ICollection<User> Users { get; set; }
+
     }
 
     public class Parameter
