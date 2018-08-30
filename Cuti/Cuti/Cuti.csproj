@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\LeaveRequestController.cs" />
+    <Compile Include="Controller\RoleController.cs" />
     <Compile Include="Controller\SpecialLeaveController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Migrations\201808281456200_InitialCreate.cs" />

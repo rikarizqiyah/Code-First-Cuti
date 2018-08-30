@@ -34,6 +34,7 @@ namespace Cuti
                 Console.WriteLine("=======MENU=======");
                 Console.WriteLine("1. User");
                 Console.WriteLine("2. Special Leave");
+                Console.WriteLine("3. Role");
                 Console.WriteLine("==================");
                 Console.Write("Pilih Action : ");
                 choice = Convert.ToInt32(System.Console.ReadLine());
@@ -47,12 +48,16 @@ namespace Cuti
                         SpecialLeaveController panggil_sl = new SpecialLeaveController();
                         panggil_sl.Menu();
                         break;
+                    case 3:
+                        RoleController panggil_role = new RoleController();
+                        panggil_role.Menu();
+                        break;
                     default:
                         System.Console.Write("Terima Kasih :)");
                         System.Console.Read();
                         break;
                 }
-            } while (choice != 3);
+            } while (choice != 4);
         }
     }
 }
